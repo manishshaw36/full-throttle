@@ -1,4 +1,5 @@
 # Full-throttle Frontend Test
+This project is deloyed at https://app-full-throttle.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

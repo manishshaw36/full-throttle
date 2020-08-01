@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Server } from "miragejs";
+import testJson from './test-json.json';
+
+import HomePage from './component/homepage/homepage.component';
+
+new Server({
+  routes() {
+    this.namespace = "api";
+    this.get("/members/", () => testJson);
+  }
+});
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <HomePage />,
   document.getElementById('root')
 );
 

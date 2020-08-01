@@ -1,0 +1,9 @@
+.members-card {
+    width: 18rem;
+    cursor: pointer;
+}
+
+.members-card:hover {
+    transform: scale(1.03);
+    background-color:rgba(247, 247, 247, 0.479);
+}
